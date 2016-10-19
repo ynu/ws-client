@@ -1,0 +1,23 @@
+{
+  "name": "ynu-ws-client",
+  "version": "0.0.1",
+  "description": "A WebService Client for YNU based Jinzhi systems.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ynu/ws-client.git"
+  },
+  "keywords": [
+    "ynu",
+    "webservice"
+  ],
+  "author": "na57 <na57@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ynu/ws-client/issues"
+  },
+  "homepage": "https://github.com/ynu/ws-client#readme"
+}
