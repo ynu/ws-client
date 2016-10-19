@@ -1,10 +1,17 @@
 {
   "name": "ynu-ws-client",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "A WebService Client for YNU based Jinzhi systems.",
   "main": "dist/index.js",
   "scripts": {
-    "test": "npm test"
+    "lint": "eslint src test tools",
+    "test": "mocha --compilers js:babel-register",
+    "test:watch": "mocha --compilers js:babel-register --reporter min --watch",
+    "test:cover": "babel-node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "build": "node tools/build",
+    "prepublish": "npm run build",
+    "publish:docs": "easystatic deploy docs --repo kriasoft/babel-starter-kit"
   },
   "repository": {
     "type": "git",
@@ -35,7 +42,8 @@
     "extends": "airbnb-base"
   },
   "dependencies": {
-    "babel-runtime": "^6.11.6"
+    "babel-runtime": "^6.11.6",
+    "soap": "^0.17.0"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
@@ -56,16 +64,5 @@
     "rollup": "^0.36.3",
     "rollup-plugin-babel": "^2.6.1",
     "sinon": "^2.0.0-pre.3"
-  },
-  "scripts": {
-    "lint": "eslint src test tools",
-    "test": "mocha --compilers js:babel-register",
-    "test:watch": "mocha --compilers js:babel-register --reporter min --watch",
-    "test:cover": "babel-node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha",
-    "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "build": "node tools/build",
-    "prepublish": "npm run build",
-    "publish:docs": "easystatic deploy docs --repo kriasoft/babel-starter-kit",
-    "start": "easystatic start docs"
   }
 }
