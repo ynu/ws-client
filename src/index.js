@@ -1,1 +1,3 @@
-export default from './client.js';
+import Client from './client';
+
+export default Client;
