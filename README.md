@@ -1,6 +1,13 @@
 # ws-client
 基于金智主数据平台的云南大学WebService客户端
 
+[![NPM version](http://img.shields.io/npm/v/ynu-ws-client.svg?style=flat-square)](https://www.npmjs.com/package/ynu-ws-client)
+[![NPM downloads](http://img.shields.io/npm/dm/ynu-ws-client.svg?style=flat-square)](https://www.npmjs.com/package/ynu-ws-client)
+[![Build Status](http://img.shields.io/travis/ynu/ws-client/master.svg?style=flat-square)](https://travis-ci.org/ynu/ws-client)
+[![Coverage Status](https://img.shields.io/coveralls/ynu/ws-client.svg?style=flat-square)](https://coveralls.io/github/ynu/ws-client)
+[![Dependency Status](http://img.shields.io/david/dev/ynu/ws-client.svg?style=flat-square)](https://david-dm.org/ynu/ws-client#info=devDependencies)
+
+
 ## How to Install
 `npm install ynu-ws-client`
 
